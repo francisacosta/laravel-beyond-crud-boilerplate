@@ -1,5 +1,7 @@
 <?php
 
+use App\Application;
+
 /*
 |--------------------------------------------------------------------------
 | Create The Application
@@ -11,10 +13,9 @@
 |
 */
 
-$app = new Illuminate\Foundation\Application(
+$app = (new Application(
     $_ENV['APP_BASE_PATH'] ?? dirname(__DIR__)
-);
-
+))->useAppPath(base_path('src/App'));
 /*
 |--------------------------------------------------------------------------
 | Bind Important Interfaces
