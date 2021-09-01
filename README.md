@@ -1,0 +1,1 @@
+"# laravel-beyond-crud-boilerplate" 
